@@ -15,9 +15,20 @@ public class ProblemD2 {
                 // Hvis b har 2 point mere end A
                 else if (bScore-aScore == 2) System.out.println("B");
             }
-            else if (aScore > 21 && bScore < 21) System.out.println("A");
-            else if (bScore > 21 && aScore < 21) System.out.println("B");
-            
+            else if (aScore > 21 && bScore < 21){
+
+                System.out.println("!");
+            }
+            else if (bScore > 21 && aScore < 21){
+                System.out.println("!");
+            }
+
+
+            // hvis modstander fører med mere end to point over 30
+            if(aScore < bScore-2 || bScore < aScore-2){
+                if(aScore < bScore) System.out.println("B");
+                else System.out.println("A");
+            }
         }
         // Spillerne er stadig under eller lig 21
         else {
