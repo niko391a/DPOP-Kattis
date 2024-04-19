@@ -5,17 +5,16 @@ public class ProblemB {
     // quadrant = (b - white) / 2
     // rectangle = 6/4 * quadrant
     public static void main(String[] args){
-
         Scanner scn = new Scanner(System.in);
 
         int breadth = scn.nextInt();
 
-        int white = 1/7 * breadth;
-        int quadrant = (breadth - white) / 2;
-        int rectangle = 6/4 * quadrant;
+        double white = breadth / 7.0 ;
+        double quadrantL = (breadth - white) / 2;
+        double rectangleL = (6.0/4.0 * quadrantL);
 
-        int result = (2 * (quadrant*quadrant)) + (2 * (rectangle));
+        double result = 2.0*(quadrantL*quadrantL) + 2.0 * (6.0/4.0 * (quadrantL*quadrantL));
 
-        System.out.println(result);
+        System.out.println((int) result);
     }
 }

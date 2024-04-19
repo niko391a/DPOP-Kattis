@@ -11,6 +11,8 @@ public class ProblemC {
 
         Map<String, String> monthMap = new HashMap<>();
 
+
+
         monthMap.put("01", "januar");
         monthMap.put("02", "februar");
         monthMap.put("03", "marts");
@@ -24,7 +26,7 @@ public class ProblemC {
         monthMap.put("11", "november");
         monthMap.put("12", "december");
 
-        System.out.print(splittedDate[1] + ". " + monthMap.get(splittedDate[0]) + splittedDate[2]);
+        System.out.print(splittedDate[1] + ". " + monthMap.get(splittedDate[0]) + " " + splittedDate[2]);
     }
 
 }
