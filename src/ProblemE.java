@@ -4,10 +4,10 @@ import java.util.*;
 public class ProblemE  {
 
     public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("C:\\Users\\carls\\Documents\\GitHub\\DPOP-Kattis\\Data\\01.in");
+        //File file = new File("C:\\Users\\carls\\Documents\\GitHub\\DPOP-Kattis\\Data\\01.in");
 
 
-        Scanner scanner = new Scanner(file);
+        Scanner scanner = new Scanner(System.in);
         int highestVal = 0;
 
         int n = scanner.nextInt();
