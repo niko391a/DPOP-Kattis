@@ -24,7 +24,13 @@ public class ProblemC {
         monthMap.put("11", "november");
         monthMap.put("12", "december");
 
-        System.out.print(splittedDate[1] + ". " + monthMap.get(splittedDate[0]) + splittedDate[2]);
+        String day = splittedDate[1].startsWith("0") ? splittedDate[1].substring(1) : splittedDate[1];
+
+
+        System.out.print(day + ". " + monthMap.get(splittedDate[0]) + " " + splittedDate[2]);
+
+
+
     }
 
 }
